@@ -12,8 +12,12 @@ app = Flask(__name__)
 
 # ---------------- Load Model and Encoder ----------------
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-model = tf.keras.models.load_model(r"D:\Sign-Language-Detection\project\Indian-Sign-Language\scripts\dataset\sign_language_mobilenet.h5")
-le = joblib.load(r"D:\Sign-Language-Detection\project\Indian-Sign-Language\scripts\dataset\label_encoder_mobilenet.pkl")
+model = tf.keras.models.load_model(
+    os.path.join(BASE_DIR, "scripts", "dataset", "sign_language_mobilenet.h5")
+)
+le = joblib.load(
+    os.path.join(BASE_DIR, "scripts", "dataset", "label_encoder_mobilenet.pkl")
+)
 
 
 # ---------------- MediaPipe Setup ----------------
