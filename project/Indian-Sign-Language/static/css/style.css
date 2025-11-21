@@ -1,0 +1,151 @@
+/* ==================== General Layout ==================== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ==================== Header ==================== */
+h1 {
+  color: #66fcf1;
+  font-size: 2.5rem;
+  margin-top: 40px;
+}
+
+.subtitle {
+  color: #c5c6c7;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+/* ==================== Container ==================== */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ==================== Video Card ==================== */
+.video-card {
+  background: rgba(31, 40, 51, 0.85);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.15);
+  transition: all 0.3s ease;
+}
+
+.video-card:hover {
+  box-shadow: 0 0 35px rgba(102, 252, 241, 0.3);
+}
+
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.video-wrapper img {
+  width: 640px;
+  height: 480px;
+  border-radius: 15px;
+  border: 3px solid #45a29e;
+  background: #000;
+}
+
+/* ==================== Buttons ==================== */
+.control-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.btn {
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.start {
+  background-color: #45a29e;
+  color: #fff;
+}
+
+.start:hover {
+  background-color: #66fcf1;
+  color: #000;
+}
+
+.stop {
+  background-color: #c3073f;
+  color: #fff;
+}
+
+.stop:hover {
+  background-color: #ff4b5c;
+}
+
+.clear {
+  background-color: #1f2833;
+  color: #66fcf1;
+  border: 2px solid #66fcf1;
+}
+
+.clear:hover {
+  background-color: #66fcf1;
+  color: #0b0c10;
+}
+
+/* ==================== Output ==================== */
+.output {
+  margin-top: 30px;
+}
+
+.live-letter, .sentence-box {
+  background: rgba(11, 12, 16, 0.6);
+  border: 2px solid #45a29e;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px auto;
+  width: 80%;
+  color: #ffffff;
+}
+
+.live-letter h3, .sentence-box h3 {
+  color: #66fcf1;
+  margin-bottom: 10px;
+}
+
+#currentLetter {
+  font-size: 2rem;
+  color: #ffdf6c;
+  font-weight: bold;
+}
+
+#sentence {
+  min-height: 50px;
+  font-size: 22px;
+  font-weight: 500;
+  color: #fff;
+  word-wrap: break-word;
+}
+
+/* ==================== Footer ==================== */
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #c5c6c7;
+}

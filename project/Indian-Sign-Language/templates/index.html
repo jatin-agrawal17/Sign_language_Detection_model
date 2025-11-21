@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🤟 Sign Language Detection</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🤟 Real-Time Sign Language Detection</h1>
+    <p class="subtitle">AI-powered gesture recognition that converts sign language into text</p>
+
+    <div class="video-card">
+      <div class="video-wrapper">
+        <img id="video" src="" alt="Video Stream">
+      </div>
+
+      <div class="control-buttons">
+        <button id="startBtn" class="btn start">Start</button>
+        <button id="stopBtn" class="btn stop">Stop</button>
+        <button id="clearBtn" class="btn clear">Clear</button>
+      </div>
+
+      <div class="output">
+        <div class="live-letter">
+          <h3>📡 Current Letter:</h3>
+          <p id="currentLetter">-</p>
+        </div>
+
+        <div class="sentence-box">
+          <h3>📝 Predicted Sentence:</h3>
+          <p id="sentence"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Developed with ❤️ using Flask, TensorFlow & MediaPipe</p>
+    <p>Developed by Jatin Agrawal(23ume524) Naman Agrawal (23ume535) Mayank Goyal (23ume531) Under the guidance of Dr. Atul Mishra</p>
+  </footer>
+
+  <script src="/static/js/main.js"></script>
+</body>
+</html>
